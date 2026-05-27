@@ -4,37 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <span class="rec-label" aria-hidden="true">REC</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_light">
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
               Авто
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
+            <button class="header__theme-menu-button header__theme-menu-button_type_dark">
               Неон
             </button>
           </li>
         </ul>
       </nav>
+      <h1 class="page__title header__title">no focus</h1>
+      <p class="title-decor header__text">
+        Что делать, когда не можешь делать ничего<br />
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
+
+    <main class="content">
+      <section class="section section_type_grid">
+        <h2 class="section__title">Почему сосредоточиться так сложно</h2>
+        <div class="section__content">
+          <article class="article">
+            <h3 class="title-decor article__title">Многозадачность</h3>
+            <p class="article__text">
+              Особенно сложно сосредоточиться, когда задач много и все они важные. Где же легендарная многозадачность, когда она так нужна вам и всем нанимающим менеджерам этого мира? А дело в том, что ее просто не существует. Исследователи <a class="text-link" href="https://dana.org/article/multicosts-of-multitasking/" target="_blank">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. Когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин, а мы быстрее устаем и чаще ошибаемся.
+            </p>
+          </article>
+          <article class="article">
+            <h3 class="title-decor article__title">Дофамин</h3>
+            <p class="article__text">
+              В невозможности сосредоточиться участвует и полная противоположность стрессу - дофамин. Это вещество связано с системой вознаграждения мозга. Мы часто отвлекаемся от важной задачи на что-то более приятное: проверяем сообщения, листаем ленту, смотрим лайки. Мозг получает быструю награду, а вернуться к сложной работе становится труднее.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Что снижает концентрацию внимания?</h2>
+        <div class="cards">
+          <article class="article">
+            <h3 class="title-decor article__title">Многозадачность</h3>
+            <p class="article__text">
+              Любая стрессовая ситуация заставляет мозг постоянно сканировать окружение на предмет опасности. Например, читать новости вместо работы. Но быть собранными все время невозможно: концентрация похожа на мышцу, и ей тоже нужен отдых.
+            </p>
+          </article>
+          <article class="article">
+            <h3 class="title-decor article__title">Еда</h3>
+            <p class="article__text">
+              Быстрые углеводы молниеносно доставляют в мозг энергию, но она так же быстро заканчивается. После короткого подъема приходит усталость и сонливость, а рука снова тянется за сладким.
+            </p>
+          </article>
+          <article class="article">
+            <h3 class="title-decor article__title">Гаджеты</h3>
+            <p class="article__text">
+              Когда на ноутбуке открыт код, в наушниках звучит подкаст, а рядом мигает телефон, мозг пытается переключаться между задачами и теряет темп. Чтобы вернуться к глубокой работе, часто нужны не секунды, а долгие минуты.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section_type_grid">
+        <h2 class="section__title">Как концентрироваться лучше, чем золотая рыбка</h2>
+        <div class="section__content">
+          <h3 class="title-decor tips-title">5 простых, но не всегда легких советов</h3>
+          <article class="article">
+            <h4 class="title-decor title-decor_light">Представьте небо и облака</h4>
+            <p class="article__text">
+              Легкая медитация помогает успокоиться. Представьте, что чистое небо - это вы, а облака - тревожные мысли. Облака проходят, а небо остается.
+            </p>
+          </article>
+          <article class="article">
+            <h4 class="title-decor title-decor_light">Включите музыку</h4>
+            <p class="article__text">
+              Лучше выбрать спокойную музыку без резких перепадов и текста. Подойдет белый шум, нейромузыка или ровный фоновый плейлист.
+            </p>
+          </article>
+          <article class="article">
+            <h4 class="title-decor title-decor_light">Прогуляйтесь</h4>
+            <p class="article__text">
+              Даже двадцатиминутная прогулка помогает переключиться. Исследование <a class="text-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328" target="_blank">показало</a>, что созерцание природы повышает концентрацию лучше, чем просмотр городских пейзажей.
+            </p>
+          </article>
+          <article class="article">
+            <h4 class="title-decor title-decor_light">Хорошо ешьте</h4>
+            <p class="article__text">
+              Выбирайте продукты, которые не провоцируют резкие скачки сахара: овощи, ягоды, бобовые, коричневый рис и цельнозерновой хлеб.
+            </p>
+          </article>
+          <article class="article">
+            <h4 class="title-decor title-decor_light">Читайте</h4>
+            <p class="article__text">
+              Бумажные книги тренируют направленное внимание. Хороший текст может удерживать фокус часами, а это ровно тот навык, который нужен в работе.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery">
+        <h2 class="title-decor gallery__title">А можно в картинках?</h2>
+        <div class="gallery__list">
+          <img class="gallery__image gallery__image_type_sunset" src="./images/sunset.png" alt="Розовый закат над морем" loading="lazy" />
+          <img class="gallery__image gallery__image_type_ice-cream" src="./images/ice-cream.png" alt="Порция мороженого в ярком свете" loading="lazy" />
+          <img class="gallery__image gallery__image_type_tape" src="./images/tape.png" alt="Аудиокассета крупным планом" loading="lazy" />
+          <img class="gallery__image gallery__image_type_books" src="./images/books.png" alt="Стопка книг" loading="lazy" />
+          <img class="gallery__image gallery__image_type_street" src="./images/street.png" alt="Улица с неоновой вывеской" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+      <h2 class="page__title footer__title">focus</h2>
+    </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
